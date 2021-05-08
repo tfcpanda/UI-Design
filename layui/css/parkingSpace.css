@@ -1,0 +1,35 @@
+.parkingSpace .layui-col-md4 h3 strong{
+	font-size: 3rem;
+	color: #1594FF;
+}	
+
+.parkingSpace .grid-demo{
+
+
+}
+
+.parkingSpace .grid-demo h3 {
+	margin-left: 3%;
+	margin-top: 5%;
+}
+
+.parkingSpace .grid-demo p {
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+
+.parkingSpace{
+	margin-bottom: 0.5rem;
+	
+}
+
+.parkingSpace .grid-demo-bg1{
+	padding: 1rem;
+	background-color: white;
+	
+}
+
+.parkingSpace img{
+	margin-left: 160px;
+}
