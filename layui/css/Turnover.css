@@ -1,15 +1,11 @@
-.Turnover .layui-col-md4{
-	background-color: #FFFFFF;
-}
-
 .Turnover{
-	margin-bottom: 30px;
+	margin-bottom: 1.25rem;
+background-color: #FFFFFF;
 }
 
-.Turnover .layui-col-md4 p{
-	margin-top: 59px;
-	margin-left: 170px;
-}
+
+
+
 .Turnover .layui-col-md4 p strong{
 	font-size: 20px;
 	color: #1594FF;
@@ -20,3 +16,28 @@
 	color: #1594FF;
 }
 
+.Turnover h4{
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-left: 1.625rem;
+	margin-top: 0.625rem;
+	margin-bottom: 1.875rem;
+}
+
+.Turnover h3{
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-left: 1.625rem;
+	margin-top: 0.625rem;
+	
+}
+
+.Turnover p{
+	font-size: 1.25rem;
+	margin-bottom: 2.8125rem;
+	margin-left: 15.3125rem;
+}
+
+#ChargeRate{
+	margin-left: 2.5rem;
+}

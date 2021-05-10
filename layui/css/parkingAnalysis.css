@@ -1,8 +1,45 @@
-/* .parkingAnalysis .layui-col-md4{
-	background-color: #FFFFFF;
-} */
+.parkingAnalysis h3{
+	font-weight: bold;
+	margin-left: 1.25rem;
+	padding-top: 0.625rem;	
+}
 
 
-.parkingAnalysis .grid-demo-bg1{
+/* 停车付费分析背景图 */
+.ParkingFeeAnalysis{
 	background-color: #FFFFFF;
+}
+
+/* 停车时长分析 */
+.ParkingTimeAnalysis{
+	background-color: #FFFFFF;
+}
+
+
+/* 停车饱和度分析 */
+.ParkingDayAnalysis{
+	background-color: #FFFFFF;
+}
+
+
+
+.ParkingDayAnalysis .ParkingDay p{
+	margin-left: 2.5rem;
+	margin-top: 0.3125rem;
+	margin-bottom: 0.3125rem;
+}
+
+.ParkingDayAnalysis .ParkingNight p{
+	margin-left: 2.5rem;
+	margin-top: 0.3125rem;
+	margin-bottom: 0.3125rem;
+}
+
+
+#ParkingFeeAnalysisChart{
+	margin-left: 6.25rem;
+}
+
+#ParkingTimeAnalysisChart{
+
 }

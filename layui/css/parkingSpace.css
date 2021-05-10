@@ -1,35 +1,107 @@
-.parkingSpace .layui-col-md4 h3 strong{
-	font-size: 3rem;
-	color: #1594FF;
-}	
-
-.parkingSpace .grid-demo{
-
-
+/* 下边距 */
+.parkingSpace{
+	margin-bottom: 0.625rem;
 }
 
-.parkingSpace .grid-demo h3 {
-	margin-left: 3%;
+
+
+/* 背景色 */
+.parkingSpace .BoxRoadParkingNumber{
+	padding: 1.25rem;
+	background-color: #FFFFFF;
+}
+
+/* 图片移位 */
+.RoadParkingPic{
+	margin-left: 64%;
 	margin-top: 5%;
 }
 
-.parkingSpace .grid-demo p {
-	margin-left: 5%;
-	margin-top: 3%;
+.RoadParkingNumber {
+	margin-top: 0.625rem;
 }
 
 
-.parkingSpace{
-	margin-bottom: 0.5rem;
-	
+/* 蓝色字体 */
+.RoadParkingNumber strong{
+	font-size: 3.4375rem;
+	color: #1594FF;
+}
+.RoadParkingNumber p{
+	/* margin-left: 1px; */
+	font-size: 0.9375rem;
+
 }
 
-.parkingSpace .grid-demo-bg1{
-	padding: 1rem;
-	background-color: white;
-	
+/* ------------------------------------------------- */
+/* 背景色 */
+.parkingSpace .BoxParkingNumber{
+	padding: 1.25rem;
+	background-color: #FFFFFF;
+
 }
 
-.parkingSpace img{
-	margin-left: 160px;
+/* 图片移位 */
+.ParkingNumberPic{
+	margin-left: 64%;
+	margin-top: 5%;
+}
+
+.ParkingNumber {
+	margin-top: 0.625rem;
+}
+
+
+/* 蓝色字体 */
+.ParkingNumber strong{
+	font-size: 3.4375rem;
+	color: #1594FF;
+}
+.ParkingNumber p{
+	/* margin-left: 1px; */
+	font-size: 0.9375rem;
+
+}
+
+/* ---------------------------------- */
+
+/* 背景色 */
+.parkingSpace .BoxParkingPosition{
+	padding: 1.0625rem;
+	background-color: #FFFFFF;
+
+}
+
+/* 图片移位 */
+.ParkingNumberPic{
+	margin-left: 64%;
+	margin-top: 5%;
+}
+
+.ParkingNumber {
+	margin-top: 0.625rem;
+}
+
+
+/* 蓝色字体 */
+.BoxParkingPosition strong{
+	font-size: 3.4375rem;
+	color: #1594FF;
+	margin-left: 2.1875rem;
+}
+
+.BoxParkingPosition p{
+	/* margin-left: 1px; */
+	font-size: 0.9375rem;
+	margin-left: 2.1875rem;
+
+}
+
+.BoxParkingPosition .street{
+	margin-left: 40px;
+}	
+
+
+.BoxParkingPosition img{
+	margin-left: 1.875rem;
 }
