@@ -131,29 +131,31 @@
 							var myChart = echarts.init(document.getElementById('ChargeRate'));
 							// 指定图表的配置项和数据
 							var option = {
-								  xAxis: {
-									  type: 'category',
-									  boundaryGap: false,
-									  data: ['收费前', '收费后' ]
-								  },
-							  
-								  yAxis: {
-									  type: 'value',
-									  offset:30
-								  },
-								
-								  series: [{
-									  data: [3.63, 7.17 ],
-									  type: 'line',
-									 label:{                      //图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，
-									  show:true  ,
-									  color:'#1492FF',
-								  },
-									  areaStyle: {
-										  color:'#86C7FF'
-									  }
-								  }]
-								 };
+									 xAxis: {
+										 type: 'category',
+										 boundaryGap: false,
+										 data: ['收费前', '收费后' ]
+									 },
+								 
+									 yAxis: {
+										 type: 'value',
+										 offset:30
+									 },
+								   
+									 series: [{
+										 data: [3.63, 7.17 ],
+										 type: 'line',
+										label:{                      //图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，
+										 show:true,
+										 color:'#1492FF',
+										 fontSize:18,
+										 fontWeight:600
+									 },
+										 areaStyle: {
+											 color:'#86C7FF'
+										 }
+									 }]
+									};
 						
 							// 使用刚指定的配置项和数据显示图表。
 							myChart.setOption(option);

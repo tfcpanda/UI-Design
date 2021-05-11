@@ -1,0 +1,81 @@
+body{
+	background-color: #F5F5F5;
+	margin: 1%;
+}
+
+/* 篮天保卫战加背景色 */
+.SkyDefense{
+	background-color: #FFFFFF;
+	margin-bottom: 1.25rem;
+	
+}
+
+.SkyDefense h1{
+	font-weight: bold;
+	font-size: 1.125rem;
+	margin-left: 1.875rem;
+	margin-bottom: 3.625rem;
+	margin-top: 0.625rem;
+}
+
+.SkyDefense h2{
+	margin-left: 1.25rem;
+	font-weight: bold;
+	font-size: 1.5625rem;
+	text-align: right;
+	margin-right: 3.75rem;
+	margin-bottom: 2.5rem;
+}
+
+.SkyDefense h3{
+	margin-left: 30px;
+/* 	margin-bottom: 20px;
+ */}
+
+.SkyDefense h4{
+	margin-left: 1.25rem;
+	font-size: 0.9375rem;
+	margin-top: 0.625rem;
+	text-align: right;
+	margin-right: 1.875rem;
+}
+
+.SkyDefense h5{
+	font-weight: bold;
+	font-size: 1.5625rem;
+	margin-left: 1.875rem;
+	margin-bottom: ;
+}
+
+
+.SkyDefense .layui-progress{
+	margin-left: 1.25rem;
+	margin-bottom: 4.375rem;
+}
+
+.SkyDefense .layui-progress h3{
+	margin-left: 100%;
+	font-size: 1.4375rem;
+}
+
+/* 环节审批加背景色 */
+.Approve{
+	background-color: #FFFFFF;
+}
+
+.Approve h1{
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin-left: 1.25rem;
+	margin-bottom: 2.5rem;
+	margin-top: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
