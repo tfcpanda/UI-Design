@@ -3,8 +3,6 @@
 	margin-bottom: 0.625rem;
 }
 
-
-
 /* 背景色 */
 .parkingSpace .BoxRoadParkingNumber{
 	padding: 1.25rem;
@@ -13,12 +11,12 @@
 
 /* 图片移位 */
 .RoadParkingPic{
-	margin-left: 64%;
-	margin-top: 5%;
+	margin-left:60%;
+	margin-top: 3%;
 }
 
 .RoadParkingNumber {
-	margin-top: 0.625rem;
+	margin-top: 3%;
 }
 
 
@@ -28,9 +26,7 @@
 	color: #1594FF;
 }
 .RoadParkingNumber p{
-	/* margin-left: 1px; */
 	font-size: 0.9375rem;
-
 }
 
 /* ------------------------------------------------- */
@@ -43,8 +39,8 @@
 
 /* 图片移位 */
 .ParkingNumberPic{
-	margin-left: 64%;
-	margin-top: 5%;
+	margin-left:60%;
+	margin-top: 3%;
 }
 
 .ParkingNumber {
@@ -74,8 +70,8 @@
 
 /* 图片移位 */
 .ParkingNumberPic{
-	margin-left: 64%;
-	margin-top: 5%;
+	margin-left:60%;
+	margin-top: 3%;
 }
 
 .ParkingNumber {

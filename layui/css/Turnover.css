@@ -4,8 +4,6 @@ background-color: #FFFFFF;
 }
 
 
-
-
 .Turnover .layui-col-md4 p strong{
 	font-size: 20px;
 	color: #1594FF;
@@ -19,9 +17,9 @@ background-color: #FFFFFF;
 .Turnover h4{
 	font-weight: bold;
 	font-size: 1.25rem;
-	margin-left: 1.625rem;
-	margin-top: 0.625rem;
-	margin-bottom: 1.875rem;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .Turnover h3{
@@ -34,10 +32,10 @@ background-color: #FFFFFF;
 
 .Turnover p{
 	font-size: 1.25rem;
-	margin-bottom: 2.8125rem;
-	margin-left: 15.3125rem;
+	margin-bottom: 10%;
+	margin-left: 40%;
 }
 
 #ChargeRate{
-	margin-left: 2.5rem;
+	/* margin-left: 20%; */
 }

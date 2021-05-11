@@ -6,17 +6,32 @@
 	padding: 1.875rem;
 }
 
+.count table{
+	width: 99%;
+	text-align: center;
+	margin: 0 auto;
+}
+.count tbody{
+	margin-left: 1.25rem;
+}
+
+.count tr td{
+	text-align: center;
+/* 	margin-left: 18.75rem; */
+	
+}
+
 .count h3{
 	font-weight: bold;
 	color: #1677FF;
 	font-size: 1.875rem;
-	margin-right: 4.375rem;
+/* 	margin-right: 4.375rem;
 	margin-left: 1.875rem;
-	margin-bottom: 0.625rem;	
+	margin-bottom: 0.625rem;	 */
 }
 
 .count h5{
-	margin-left: 1.4375rem;
+
 }
 
 .FreshWater{

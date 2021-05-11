@@ -1,7 +1,7 @@
 .parkingAnalysis h3{
 	font-weight: bold;
-	margin-left: 1.25rem;
-	padding-top: 0.625rem;	
+	margin-left: 5%;
+	padding-top: 1%;	
 }
 
 
@@ -22,8 +22,30 @@
 }
 
 
+/* #ParkingTimeAnalysisChart{
+	
+} */
+.ParkingFeeAnalysis{
+	padding: 2%;
+}
 
-.ParkingDayAnalysis .ParkingDay p{
+.ParkingTimeAnalysis{
+	padding: 2%;
+}
+
+.ParkingDayAnalysis{
+	padding: 2%;
+}
+
+.ParkingDay{
+	margin-top: 5%;
+}
+
+.ParkingNight{
+	margin-top: 5%;
+}
+
+/* .ParkingDayAnalysis .ParkingDay p{
 	margin-left: 2.5rem;
 	margin-top: 0.3125rem;
 	margin-bottom: 0.3125rem;
@@ -33,13 +55,10 @@
 	margin-left: 2.5rem;
 	margin-top: 0.3125rem;
 	margin-bottom: 0.3125rem;
-}
+} */
 
-
+/* 
 #ParkingFeeAnalysisChart{
 	margin-left: 6.25rem;
-}
+} */
 
-#ParkingTimeAnalysisChart{
-
-}
