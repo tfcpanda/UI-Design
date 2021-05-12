@@ -1,0 +1,206 @@
+/*边框*/
+body{
+	background-color: #F5F5F5;
+	margin: 0.03125rem;
+}
+
+/* 下边距 */
+.parkingSpace{
+	margin-bottom: 0.625rem;
+}
+
+/* 背景色 */
+.parkingSpace .BoxRoadParkingNumber{
+	padding: 1.25rem;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.parkingSpace .BoxParkingNumber{
+	padding: 1.25rem;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+/*字体颜色*/
+.BoxRoadParkingNumber strong{
+	font-size: 30px;
+	color: #1492FF;
+}
+
+.BoxParkingNumber strong{
+	font-size: 30px;
+	color: #1492FF;
+}
+
+/* 图片移位 */
+.RoadParkingPic{
+	margin-left:60%;
+	margin-top: 3%;
+}
+
+
+
+
+/* ---------------------------------- */
+
+/* 背景色 */
+.BoxParkingPosition {
+	padding: 1.0625rem;
+	background-color: #FFFFFF;
+	margin-bottom: 0.625rem;
+}
+
+/* 蓝色字体 */
+.BoxParkingPosition strong{
+	font-size: 1.7rem;
+	color: #1594FF;
+	margin-left: 20%;
+
+}
+
+.BoxParkingPosition .street{
+	text-align: center;
+}
+
+.BoxParkingPosition .street p{
+	text-align: center;
+}
+
+.BoxParkingPosition .road{
+	text-align: center;
+}
+
+.BoxParkingPosition .road p{
+	text-align: center;
+}
+
+
+.BoxParkingPosition .parking{
+	text-align: center;
+}
+
+/* 图片移位 */
+.BoxParkingPosition .street img{
+	margin-left: 30%;
+}
+
+.BoxParkingPosition .road img{
+	margin-left: 26%;
+}
+
+
+
+
+
+/*------------------------------------------------周转率-------------------------------------------------*/
+
+.Turnover{
+	margin-bottom: 0.625rem;
+	background-color: #FFFFFF;
+}
+
+.Turnover h4{
+	font-weight: bold;
+	font-size: 120%;
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.Turnover p{
+	font-size: 10px;
+	margin-bottom: 1%;
+	margin-left: 10%;
+}
+
+.Turnover strong{
+	margin-left: 2%;
+	font-size: 20px;
+	color: #1A93FF;
+}
+
+/*------------------------------------------------------停车分析--------------------------------------------------*/
+/*道路收费停车泊位日均周转率分析*/
+.ChargeRateAnalysis{
+	background-color: #FFFFFF;
+	margin-bottom: 0.625rem;
+}
+
+.ChargeRateAnalysis h3{
+	font-weight: bold;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+
+/*---------------------------------------------------停车付费分析背景图-------------------------------------------*/
+/*停车付费分析*/
+.parkingAnalysis h3{
+	font-weight: bold;
+	margin-left: 5%;
+	margin-top: 1%;
+	/*margin-bottom: 3%;*/
+}
+
+.ParkingFeeAnalysis{
+	background-color: #FFFFFF;
+	margin-bottom: 0.625rem;
+}
+
+
+
+/* 停车时长分析 */
+.ParkingTimeAnalysis{
+	background-color: #FFFFFF;
+	margin-bottom: 0.625rem;
+}
+
+
+
+/* 停车饱和度分析 */
+.ParkingDayAnalysis{
+	background-color: #FFFFFF;
+}
+
+.ParkingDay h5{
+	margin-left: 10%;
+}
+
+.ParkingDay h6{
+	margin-left: 10%;
+	color: #A8A8A8;
+}
+
+.ParkingNight h5{
+	margin-left: 10%;
+}
+
+.ParkingNight h6{
+	margin-left: 10%;
+	color: #A8A8A8;
+}
+
+
+/*外边距*/
+.ParkingFeeAnalysis{
+	padding: 2%;
+}
+
+.ParkingTimeAnalysis{
+	padding: 2%;
+}
+
+.ParkingDayAnalysis{
+	padding: 2%;
+}
+
+.ParkingDay{
+	margin-top: 5%;
+}
+
+.ParkingNight{
+	margin-top: 5%;
+}
+
+
+

@@ -1,0 +1,231 @@
+/*SkyDefense*/
+body {
+    background-color: #F5F5F5;
+    margin: 1%;
+}
+
+/* 篮天保卫战加背景色 */
+.SkyDefense {
+    background-color: #FFFFFF;
+
+
+}
+
+.SkyDefense h1 {
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-left: 1.3rem;
+    margin-bottom: 5%;
+    margin-top: 0.625rem;
+}
+
+.SkyDefense h2 {
+    font-weight: bold;
+    font-size: 1.5625rem;
+    text-align: right;
+    margin-right: 1.8rem;
+
+}
+
+.SkyDefense h3 {
+    margin-left: 1.3rem;
+    margin-top: 0.925rem
+
+}
+
+.SkyDefense h4 {
+    margin-left: 1.25rem;
+    font-size: 0.9375rem;
+    margin-top: 0.925rem;
+    text-align: right;
+    margin-right: 1.875rem;
+}
+
+.SkyDefense h5 {
+    font-weight: bold;
+    font-size: 1.5625rem;
+    margin-left: 1.3rem;
+    text-align: left;
+
+}
+
+
+.SkyDefense .layui-progress {
+    margin-left: 1.25rem;
+    margin-bottom: 1.2rem;
+}
+
+.SkyDefense .layui-progress h3 {
+    margin-left: 110%;
+    font-size: 1rem;
+    /*margin-bottom: 5px;*/
+}
+
+/* -----------------------------------------环节审批加背景色------------------------------ */
+.Approve {
+    background-color: #FFFFFF;
+    margin-top: 0.8rem;
+}
+
+.Approve h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 1.2rem;
+    padding-top: 1rem;
+
+}
+
+
+/*------------------------------------------ 污染数量加背景色 -------------------------------------------*/
+.count {
+    background-color: #FFFFFF;
+    padding: 2%;
+    margin-bottom: 0.8rem;
+}
+
+.count table {
+    width: 99%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.count tbody {
+    margin-left: 1.25rem;
+}
+
+.count tr td {
+    text-align: center;
+    /* 	margin-left: 18.75rem; */
+    width: 20%;
+}
+
+.count h3 {
+    font-weight: bold;
+    color: #1677FF;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+}
+
+.count h5 {
+    font-size: 0.5rem;
+    margin-bottom: 4%;
+}
+
+/*-----------------------------------------------碧水行动----------------------------------------------*/
+.FreshWater {
+    background-color: #FFFFFF;
+    margin-top: 0.8rem;
+}
+
+/* 碧水行动 */
+.FreshWater h3 {
+    font-weight: bold;
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+/* 废水排口统计 */
+.gasSta table{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.gasSta table tr td{
+    height: 45px;
+}
+
+.gasSta {
+    background-color: #FFFFFF;
+    margin-top: 0.8rem;
+}
+
+.gasSta h2 {
+    font-weight: bold;
+    margin-left: 1.25rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.gasSta .layui-col-md6 {
+    padding: 1%;
+}
+
+/* 沸水排口统计 */
+.watSta table{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.watSta table tr td{
+    height: 45px;
+}
+
+.watSta {
+    background-color: #FFFFFF;
+    margin-top: 0.8rem;
+
+}
+
+.watSta h2 {
+    font-weight: bold;
+    margin-left: 1.25rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+
+}
+
+
+.watSta .layui-col-md6 {
+    padding: 1%;
+}
+
+
+/* 入河入海口统计 */
+.seaSta table{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.seaSta table tr td{
+    height: 45px;
+}
+
+.seaSta {
+    background-color: #FFFFFF;
+    margin-top: 0.8rem;
+}
+
+.seaSta h2 {
+    font-weight: bold;
+    margin-left: 1.25rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.seaSta .layui-col-md6 {
+    padding: 1%;
+}
+
+
+.sz_t_2 {
+    color: #1492FF;
+}
+
+.gasSta
+
+
+
+
+
+
+
