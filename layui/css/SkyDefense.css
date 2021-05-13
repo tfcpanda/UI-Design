@@ -72,6 +72,112 @@ body{
 }
 
 
+/*********************************************************** waterSta *************************************************/
+
+/* 污染数量加背景色 */
+.count{
+	background-color: #FFFFFF;	
+	margin-bottom: 1.25rem;
+	padding: 1.875rem;
+}
+
+.count table{
+	width: 99%;
+	text-align: center;
+	margin: 0 auto;
+}
+.count tbody{
+	margin-left: 1.25rem;
+}
+
+.count tr td{
+	text-align: center;
+/* 	margin-left: 18.75rem; */
+	
+}
+
+.count h3{
+	font-weight: bold;
+	color: #1677FF;
+	font-size: 1.875rem;
+/* 	margin-right: 4.375rem;
+	margin-left: 1.875rem;
+	margin-bottom: 0.625rem;	 */
+}
+
+.count h5{
+
+}
+
+.FreshWater{
+	background-color: #FFFFFF;
+	margin-bottom: 1.25rem;
+}
+
+.gasSta{
+	background-color: #FFFFFF;
+	margin-bottom: 1.25rem;
+}
+
+.watSta{
+	background-color: #FFFFFF;
+	margin-bottom: 1.25rem;
+}
+
+.seaSta{
+	background-color: #FFFFFF;
+	
+}
+
+
+/* 碧水行动 */
+.FreshWater h3{
+	font-weight: bold;
+	margin-left: 1.5625rem;
+	margin-top: 0.9375rem;
+}
+
+/* 废水排口统计 */
+.gasSta h2{
+	font-weight: bold;
+	margin-left: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.gasSta .layui-col-md6{
+	padding: 30px;
+}
+
+/* 沸水排口统计 */
+.watSta h2{
+	font-weight: bold;
+	margin-left: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+
+.watSta .layui-col-md6{
+	padding: 30px;
+}
+
+
+/* 入河入海口统计 */
+.seaSta h2{
+	font-weight: bold;
+	margin-left: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.seaSta .layui-col-md6{
+	padding: 3.4375rem;
+}
+
+.sz_t_2 {
+    color: #1492FF;
+}
+
+
+
 
 
 

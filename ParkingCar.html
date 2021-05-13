@@ -7,9 +7,6 @@
   <link rel="stylesheet" href="./layui/css/layui.css">
   <link rel="stylesheet" href="./layui/css/head.css">
   <link rel="stylesheet" type="text/css" href="./layui/css/parkingSpace.css">
-  <link rel="stylesheet" href="./layui/css/base.css">
-  <link rel="stylesheet" href="./layui/css/Turnover.css">
-  <link rel="stylesheet" href="./layui/css/parkingAnalysis.css">
   <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
 </head>
 <body>
@@ -36,8 +33,9 @@
 
   <!-- 泊车位模块开始 -->
   <div class="layui-row layui-col-space20 parkingSpace">
-    <div class="layui-col-md4">
-      <div class="BoxRoadParkingNumber">
+    <div class="layui-col-md4 BoxRoadParkingNumber">
+
+
         <div class="layui-row">
           <div class="layui-col-xs6">
             <div class="RoadParkingPic">
@@ -52,7 +50,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
 
     <div class="layui-col-md4">
@@ -122,7 +120,7 @@
     <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
       <br>
       <br>
-      <div id="ChargeRate" style="width: 70%;height:300%;"></div>
+      <div id="ChargeRate" style="width: 100%;height:300%;"></div>
       <script type="text/javascript">
           // 基于准备好的dom，初始化echarts实例
           var myChart = echarts.init(document.getElementById('ChargeRate'));
@@ -135,18 +133,30 @@
               },
 
               yAxis: {
+                  name: "%",
                   type: 'value',
-                  offset: 30
+                  offset: 8,
+
+                  axisLine: {
+                      show: false
+                  },
+                  axisTick: {
+                      show: false
+                  },
+                  nameTextStyle: {
+                      align: "right"
+                  }
               },
 
               series: [{
                   data: [3.63, 7.17],
                   type: 'line',
+                  itemStyle: {
+                      color: "rgba(94,149,253)"
+                  },
                   label: {                      //图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，
                       show: true,
                       color: '#1492FF',
-                      fontSize: 18,
-                      fontWeight: 600
                   },
                   areaStyle: {
                       color: '#86C7FF'
@@ -163,7 +173,9 @@
 
     <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
       <h3>道路收费泊车泊位日均周转率分析</h3>
-      <div id="ChargeRateAnalysis" style="width: 70%;height:200%;"></div>
+      <br>
+      <br>
+      <div id="ChargeRateAnalysis" style="width: 100%;height:230%;"></div>
       <script type="text/javascript">
           // 基于准备好的dom，初始化echarts实例
           var myChart = echarts.init(document.getElementById('ChargeRateAnalysis'));
@@ -183,7 +195,7 @@
                   {
                       name: '占比率',
                       type: 'pie',
-                      radius: ['50%', '85%'],
+                      radius: ['40%', '75%'],
                       center: ['35%', '50%'],
                       avoidLabelOverlap: false,
                       itemStyle: {
@@ -221,7 +233,7 @@
     <div class="layui-col-md4">
       <div class="ParkingFeeAnalysis">
         <h3>停车付费分析</h3>
-        <div id="ParkingFeeAnalysisChart" style="width: 80%;height:300%;"></div>
+        <div id="ParkingFeeAnalysisChart" style="width: 100%;height:230%;"></div>
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
             var myChart = echarts.init(document.getElementById('ParkingFeeAnalysisChart'));
@@ -239,14 +251,17 @@
                 },
                 series: [
                     {
-                        name: '占比率',
                         type: 'pie',
-                        radius: ['50%', '85%'],
-                        avoidLabelOverlap: false,
+                        radius: ['40%', '75%'],
+                        center: ['35%', '50%'],
+                        avoidLabelOverlap: true,
                         label: {                      //图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，
+
+                            show: true,
+
                             formatter: ' {d}%',
                         },
-                        center: ['40%', '50%'],
+
                         labelLine: {
                             show: false
                         },
@@ -256,7 +271,7 @@
                             {value: 4.4, name: '10元以上'},
 
 
-                        ], color: ['#1492ff', '#fac858', '#91cc75', ,]
+                        ], color: ['#1492ff', '#fac858', '#91cc75', ]
 
                     }
                 ]
@@ -272,58 +287,48 @@
 
       <div class="ParkingTimeAnalysis">
         <h3>停车时长分析</h3>
-        <div id="ParkingTimeAnalysisChart" style="width: 80%;height:300%;"></div>
+        <div id="ParkingTimeAnalysisChart" style="width: 100%;height:230%;"></div>
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
             var myChart = echarts.init(document.getElementById('ParkingTimeAnalysisChart'));
             // 指定图表的配置项和数据
             var option = {
-                title: {
-
-                    left: 'center'
-                },
                 tooltip: {
                     trigger: 'item'
                 },
                 legend: {
-                    align: 'center',
+                    align: 'left',
                     top: 'middle',
                     left: 'right',
                     orient: 'vertical',
-                    textAlign: 'left',
-
+                    textAlign: 'left'
                 },
                 series: [
                     {
-                        name: '占比率',
                         type: 'pie',
-                        radius: '85%',
-                        center: ['50%', '50%'],
-                        avoidLabelOverlap: false,
+                        radius: '75%',
+                        center: ['35%', '50%'],
+                        avoidLabelOverlap: true,
 
-                        label: {                      //图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，
-
-                            formatter: ' {d}%',
+                        itemStyle: {
+                            borderRadius: 5,
+                            borderColor: '#fff',
+                            borderWidth: 2
                         },
-                        center: ['40%', '50%'],
+                        label: {
+                            show: true,
+                            formatter: ' {d}%'
+                        },
                         labelLine: {
-                            show: true
+                            show: false
                         },
                         data: [
-                            {value: 80, name: '30分钟以内（免费时长）'},
-                            {value: 7.4, name: '30分钟-1小时'},
-                            {value: 5.1, name: '1小时-2小时'},
-                            {value: 7.5, name: '2小时以上'},
+                            {value: 80, name: '30分钟以内\n(免费时长)'},
+                            {value: 7.5, name: '30分钟-1小时'},
+                            {value: 7.4, name: '1小时-2小时'},
+                            {value: 5.1, name: '2小时以上'},
 
-                        ], color: ['#1492ff', '#62daab', '#fac858', '#91cbfc',],
-
-                        emphasis: {
-                            itemStyle: {
-                                shadowBlur: 10,
-                                shadowOffsetX: 0,
-                                shadowColor: 'rgba(0, 0, 0, 0.5)'
-                            }
-                        }
+                        ], color: ['#1492ff', '#fac858', '#91cc75', '#91cbfc'],
                     }
                 ]
             };
@@ -340,187 +345,162 @@
 
 
     <div class="layui-col-md4">
-      <div class="ParkingDayAnalysis">
+      <div class="layui-col-md12 layui-col-xs12 ParkingDayAnalysis">
         <h3>停车饱和度分析</h3>
-
         <div class="layui-row">
-          <div class="layui-col-xs6">
-            <div class="ParkingDay">
-              <p><strong>日间</strong>(8:00-17:00)</p>
-              <div id="DayAnalysisOne" style="width: 80%;height:150%;"></div>
-              <script type="text/javascript">
-                  // 基于准备好的dom，初始化echarts实例
-                  var myChart = echarts.init(document.getElementById('DayAnalysisOne'));
-                  // 指定图表的配置项和数据
-                  var option = {
-                      title: {
-                          subtext: '40.5% \n\n庄市、骆驼',
-                          left: '33%',
-                          top: '20%',
-                          textAlign: 'center'
-                      },
-                      tooltip: {
-                          trigger: 'item'
-                      },
+          <div class="layui-col-xs12 ParkingDay">
+            <div class="layui-col-xs6">
+              <h5>日间</h5>
+              <h6>(8:00-17:00)</h6>
+            </div>
 
-                      series: [
-                          {
-                              name: '访问来源',
-                              type: 'pie',
-                              radius: '50%',
-                              data: [
-                                  {value: 40.5, name: '庄市、骆驼  40.5% '},
-                                  {value: 59.5, name: '全区'},
-
-
-                              ], color: ['#1492ff', '#F2F3F5',],
-
-                              emphasis: {
-                                  itemStyle: {
-                                      shadowBlur: 10,
-                                      shadowOffsetX: 0,
-                                      shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                  }
-                              }
-                          }
-                      ]
-                  };
-
-                  // 使用刚指定的配置项和数据显示图表。
-                  myChart.setOption(option);
-              </script>
-
-              <!-- 小图表 -->
-              <div id="DayAnalysisTwo" style="width: 80%;height:150%;"></div>
-              <script type="text/javascript">
-                  // 基于准备好的dom，初始化echarts实例
-                  var myChart = echarts.init(document.getElementById('DayAnalysisTwo'));
-                  // 指定图表的配置项和数据
-                  var option = {
-                      title: {
-
-                          left: 'center'
-                      },
-                      tooltip: {
-                          trigger: 'item'
-                      },
-
-                      series: [
-                          {
-                              name: '访问来源',
-                              type: 'pie',
-                              radius: '50%',
-                              data: [
-                                  {value: 40.5, name: '庄市、骆驼  40.5% '},
-                                  {value: 59.5, name: '全区'},
-
-
-                              ], color: ['#1492ff', '#F2F3F5',],
-
-                              emphasis: {
-                                  itemStyle: {
-                                      shadowBlur: 10,
-                                      shadowOffsetX: 0,
-                                      shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                  }
-                              }
-                          }
-                      ]
-                  };
-
-                  // 使用刚指定的配置项和数据显示图表。
-                  myChart.setOption(option);
-              </script>
-
+            <div class="layui-col-xs6">
+              <h5>夜间</h5>
+              <h6>(17:00-次日8:00)</h6>
             </div>
           </div>
-          <div class="layui-col-xs6">
-            <div class="ParkingNight">
-              <p><strong>夜间</strong>(17:00-次日8:00)</p>
-              <div id="NightAnalysisOne" style="width: 80%;height:150%;"></div>
-              <script type="text/javascript">
-                  // 基于准备好的dom，初始化echarts实例
-                  var myChart = echarts.init(document.getElementById('NightAnalysisOne'));
-                  // 指定图表的配置项和数据
-                  var option = {
-                      title: {
-                          left: 'center'
-                      },
-                      tooltip: {
-                          trigger: 'item'
-                      },
+          <div class="layui-col-md12 layui-col-xs12">
+            <div id="NightAnalysisOne" style="width: 100%;height:220%;"></div>
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('NightAnalysisOne'));
+                // 指定图表的配置项和数据
+                var option = {
+                    title: [{
+                        subtext: '40.5% \n\n庄市、骆驼',
+                        left: '33%',
+                        top: '20%',
+                        textAlign: 'center'
+                    }, {
+                        subtext: '33.6% \n\n庄市、骆驼',
+                        left: '82%',
+                        top: '20%',
 
-                      series: [
-                          {
-                              type: 'pie',
-                              radius: '50%',
-                              data: [
-                                  {value: 40.5, name: '庄市、骆驼  40.5% '},
-                                  {value: 59.5, name: '全区'},
+                        textAlign: 'center'
+                    }, {
+                        subtext: '47.3% \n\n招宝山老城区',
+                        left: '33%',
+                        top: '65%',
 
-
-                              ], color: ['#1492ff', '#F2F3F5',],
-
-                              emphasis: {
-                                  itemStyle: {
-                                      shadowBlur: 10,
-                                      shadowOffsetX: 0,
-                                      shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                  }
-                              }
-                          }
-                      ]
-                  };
-
-                  // 使用刚指定的配置项和数据显示图表。
-                  myChart.setOption(option);
-              </script>
-
-              <!-- 小图表 -->
-              <div id="NightAnalysisTwo" style="width: 80%;height:150%;"></div>
-              <script type="text/javascript">
-                  // 基于准备好的dom，初始化echarts实例
-                  var myChart = echarts.init(document.getElementById('NightAnalysisTwo'));
-                  // 指定图表的配置项和数据
-                  var option = {
-                      title: {
-                          subtext: '40.5% \n\n庄市、骆驼',
-                          left: '33%',
-                          top: '20%',
-                          textAlign: 'center'
-                      },
-                      tooltip: {
-                          trigger: 'item'
-                      },
-
-                      series: [
-                          {
-                              type: 'pie',
-                              radius: '50%',
-                              data: [
-                                  {value: 40.5, name: '庄市、骆驼  40.5% '},
-                                  {value: 59.5, name: '全区'}
-                              ], color: ['#1492ff', '#F2F3F5',],
-
-                              emphasis: {
-                                  itemStyle: {
-                                      shadowBlur: 10,
-                                      shadowOffsetX: 0,
-                                      shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                  }
-                              }
-                          }
-                      ]
-                  };
-
-                  // 使用刚指定的配置项和数据显示图表。
-                  myChart.setOption(option);
-              </script>
-
-            </div>
+                        textAlign: 'center'
+                    }, {
+                        subtext: '61.7% \n\n招宝山老城区',
+                        left: '82%',
+                        top: '65%',
+                        textAlign: 'center'
+                    }],
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    series: [
+                        {
+                            name: '占比率',
+                            type: 'pie',
+                            radius: '30%',
+                            center: ['10%', '30%'],
+                            data: [
+                                {name: '庄市、骆驼', value: 40.5},
+                                {name: '', value: 59.5}
+                            ],
+                            labelLine: {
+                                show: false
+                            },
+                            label: {
+                                show: false,
+                                distanceToLabelLine: 0,
+                                formatter: '{d}% \n\n{b}'
+                            },
+                            color: ['#1492ff', '#F2F3F5',],
+                            emphasis: {
+                                itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        },
+                        {
+                            name: '占比率',
+                            type: 'pie',
+                            radius: '30%',
+                            center: ['60%', '30%'],
+                            data: [
+                                {name: '庄市、骆驼', value: 33.6},
+                                {name: '', value: 36.4}
+                            ],
+                            labelLine: {
+                                show: false
+                            },
+                            label: {
+                                show: false,
+                                formatter: '{d}% \n\n{b}'
+                            },
+                            color: ['#1492ff', '#F2F3F5',],
+                            emphasis: {
+                                itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        },
+                        {
+                            name: '占比率',
+                            type: 'pie',
+                            radius: '30%',
+                            center: ['10%', '70%'],
+                            data: [
+                                {name: '招宝山老城区', value: 47.3},
+                                {name: '', value: 52.7}
+                            ],
+                            labelLine: {
+                                show: false
+                            },
+                            label: {
+                                show: false,
+                                formatter: '{d}% \n\n{b}'
+                            },
+                            color: ['#1492ff', '#F2F3F5',],
+                            emphasis: {
+                                itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        },
+                        {
+                            name: '占比率',
+                            type: 'pie',
+                            radius: '30%',
+                            center: ['60%', '70%'],
+                            data: [
+                                {name: '招宝山老城区', value: 61.7},
+                                {name: '', value: 38.3}
+                            ],
+                            labelLine: {
+                                show: false
+                            },
+                            label: {
+                                show: false,
+                                formatter: '{d}% \n\n{b}'
+                            },
+                            color: ['#1492ff', '#F2F3F5',],
+                            emphasis: {
+                                itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        }
+                    ]
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            </script>
           </div>
         </div>
-
       </div>
 
 
