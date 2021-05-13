@@ -1,0 +1,39 @@
+option = {
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '40',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 82.7, name: '搜索引擎'},
+                {value: 12.9, name: '直接访问'},
+                {value: 4.4, name: '邮件营销'},
+                
+              
+            ] ,color:['#1492ff','#fac858','#91cc75',,]
+
+        }
+    ]
+};

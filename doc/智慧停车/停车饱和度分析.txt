@@ -1,0 +1,80 @@
+option = {
+    title: {
+        text: '某站点用户访问来源',
+        subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '50%',
+            data: [
+                {value: 40.5, name: '庄市、骆驼  40.5% '},
+                {value: 59.5, name: '全区'},
+               
+              
+            ],color:['#1492ff','#F2F3F5',],
+
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+
+
+
+
+
+
+
+
+
+option = {
+    title: {
+        text: '某站点用户访问来源',
+        subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '50%',
+            data: [
+                {value: 47.3, name: '招宝山老城区 47.3% '},
+                {value: 52.7, name: '全区'},
+               
+              
+            ],color:['#1492ff','#F2F3F5',],
+
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};

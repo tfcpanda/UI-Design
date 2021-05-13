@@ -1,0 +1,17 @@
+option = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['收费前', '收费后', ],color:['#000000','#888888',]
+
+    },
+
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [3.63, 7.17, ],
+        type: 'line',
+        areaStyle: {}
+    }]
+};
