@@ -33,72 +33,58 @@
 
   <!-- 泊车位模块开始 -->
   <div class="layui-row layui-col-space20 parkingSpace">
+
     <div class="layui-col-md4 BoxRoadParkingNumber">
-
-
-        <div class="layui-row">
-          <div class="layui-col-xs6">
-            <div class="RoadParkingPic">
-              <img src="./layui/img/智慧停车01_03.png" alt="">
-            </div>
-          </div>
-          <div class="layui-col-xs6">
-            <div class="RoadParkingNumber">
-              <h3><strong>1351</strong>个</h3>
-              <p>道路收费停车泊位</p>
-            </div>
-          </div>
+      <div class="layui-col-xs6">
+        <div class="RoadParkingPic">
+          <img src="./layui/img/智慧停车01_03.png" alt="">
         </div>
       </div>
-
-
-
-    <div class="layui-col-md4">
-      <div class="BoxParkingNumber">
-        <div class="layui-row">
-          <div class="layui-col-xs6">
-            <div class="ParkingNumberPic">
-              <img src="./layui/img/智慧停车01_06.png" alt="">
-            </div>
-          </div>
-          <div class="layui-col-xs6">
-            <div class="ParkingNumber">
-              <h3><strong>1351</strong>个</h3>
-              <p>停车场泊位</p>
-            </div>
-          </div>
+      <div class="layui-col-xs6">
+        <div class="RoadParkingNumber">
+          <h3><strong>1351</strong>个</h3>
+          <p>道路收费停车泊位</p>
         </div>
-
-
       </div>
     </div>
 
-    <div class="layui-col-md4">
-      <div class="BoxParkingPosition">
-        <div class="layui-row">
 
-          <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-            <div class="street">
-              <h3><strong>3</strong>个 <img src="./layui/img/矩形%2018%20拷贝.png" alt=""></h3>
-              <p>街道</p>
-            </div>
-            <br>
-          </div>
-          <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-            <div class="road">
-              <h3><strong>34</strong>个 <img src="./layui/img/矩形%2018%20拷贝.png" alt=""></h3>
-              <p>道路</p>
-            </div>
-          </div>
-          <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
-            <div class="parking">
-              <h3><strong>13</strong>个</h3>
-              <p>停车场</p>
-            </div>
-          </div>
+    <div class="layui-col-md4 BoxParkingNumber">
+      <div class="layui-col-xs6">
+        <div class="ParkingNumberPic">
+          <img src="./layui/img/智慧停车01_06.png" alt="">
+        </div>
+      </div>
+      <div class="layui-col-xs6">
+        <div class="ParkingNumber">
+          <h3><strong>1351</strong>个</h3>
+          <p>停车场泊位</p>
+        </div>
+      </div>
+    </div>
 
+
+    <div class="layui-col-md4 BoxParkingPosition">
+
+      <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+        <div class="street">
+          <h3><strong>3</strong>个 <img src="./layui/img/矩形%2018%20拷贝.png" alt=""></h3>
+          <p>街道</p>
         </div>
 
+      </div>
+      <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+        <div class="road">
+          <h3><strong>34</strong>个 <img src="./layui/img/矩形%2018%20拷贝.png" alt=""></h3>
+          <p>道路</p>
+        </div>
+      </div>
+
+      <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+        <div class="road">
+          <h3><strong>34</strong>个</h3>
+          <p>道路</p>
+        </div>
       </div>
     </div>
   </div>
@@ -118,8 +104,7 @@
 
 
     <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-      <br>
-      <br>
+
       <div id="ChargeRate" style="width: 100%;height:300%;"></div>
       <script type="text/javascript">
           // 基于准备好的dom，初始化echarts实例
@@ -173,8 +158,7 @@
 
     <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
       <h3>道路收费泊车泊位日均周转率分析</h3>
-      <br>
-      <br>
+
       <div id="ChargeRateAnalysis" style="width: 100%;height:230%;"></div>
       <script type="text/javascript">
           // 基于准备好的dom，初始化echarts实例
@@ -271,7 +255,7 @@
                             {value: 4.4, name: '10元以上'},
 
 
-                        ], color: ['#1492ff', '#fac858', '#91cc75', ]
+                        ], color: ['#1492ff', '#fac858', '#91cc75',]
 
                     }
                 ]

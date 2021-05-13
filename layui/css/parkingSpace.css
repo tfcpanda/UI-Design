@@ -22,13 +22,13 @@ body{
 
 /* 背景色 */
 .parkingSpace .BoxRoadParkingNumber{
-	padding: 1.25rem;
+	padding: 1.4rem;
 	background-color: #FFFFFF;
 }
 
 /* 图片移位 */
 .RoadParkingPic{
-	margin-left:60%;
+	margin-left:50%;
 	margin-top: 3%;
 }
 
@@ -43,80 +43,72 @@ body{
 	color: #1594FF;
 }
 .RoadParkingNumber p{
-	font-size: 0.9375rem;
+	font-size: 0.9rem;
 }
 
 /* ------------------------------------------------- */
 /* 背景色 */
 .parkingSpace .BoxParkingNumber{
-	padding: 1.25rem;
+	padding: 1.40rem;
 	background-color: #FFFFFF;
 
 }
 
 /* 图片移位 */
 .ParkingNumberPic{
-	margin-left:60%;
+	margin-left:50%;
 	margin-top: 3%;
 }
 
 .ParkingNumber {
-	margin-top: 0.625rem;
+	margin-top: 3%;
 }
-
 
 /* 蓝色字体 */
 .ParkingNumber strong{
 	font-size: 3.4375rem;
 	color: #1594FF;
 }
-.ParkingNumber p{
-	/* margin-left: 1px; */
-	font-size: 0.9375rem;
 
+.ParkingNumber p{
+	font-size: 0.9rem;
+	margin-left: 0.5rem;
 }
 
 /* ---------------------------------- */
 
 /* 背景色 */
 .parkingSpace .BoxParkingPosition{
-	padding: 1.0625rem;
+	padding: 1.4rem;
 	background-color: #FFFFFF;
 
 }
 
-/* 图片移位 */
-.ParkingNumberPic{
-	margin-left:60%;
-	margin-top: 3%;
-}
 
-.ParkingNumber {
-	margin-top: 0.625rem;
-}
 
 
 /* 蓝色字体 */
 .BoxParkingPosition strong{
-	font-size: 3.4375rem;
+	font-size: 3.4rem;
 	color: #1594FF;
-	margin-left: 2.1875rem;
+
 }
 
 .BoxParkingPosition p{
-	/* margin-left: 1px; */
-	font-size: 0.9375rem;
-	margin-left: 2.1875rem;
 
+	font-size: 0.9rem;
+	margin-left: 0.4rem;
+	margin-top: 0.5rem;
 }
 
 .BoxParkingPosition .street{
 	margin-left: 1rem;
-}	
+}
 
 
 .BoxParkingPosition img{
-	margin-left: 1.875rem;
+	/*margin-left: 1.2rem;*/
+	/*margin-bottom: 1rem;*/
 }
 
 /*---------------------------------------------- Turnover --------------------------------------------------*/
